@@ -1,0 +1,47 @@
+.img-splide {
+    margin-top:10px;
+    width: 30%;
+    border-radius: 30px;    
+}
+
+.splide {
+
+    margin-top: 50px;
+    /* z-index: -1; */
+   
+}
+.text-flex {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin: 20px;
+}
+.splide-flex {
+    display:flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+.splide-flex h1 {
+    font-size: 32px;
+    max-width: 80vw;
+    text-align: left;
+}
+
+.splide-flex p {
+text-align: left;
+}
+
+@media (max-width: 500px) {
+    .splide-flex{
+        display:flex;
+        flex-direction: column;
+
+    }
+    .splide-flex h1 {
+        text-align: center;
+    }
+    .splide-flex p {
+        display: none;
+    }
+}
