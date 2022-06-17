@@ -1,118 +1,105 @@
-.navigation {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 60px;
-    width: 100%;
-    padding: 0.5rem 0rem;
-    background-color: #f5f5f5;
-    color: rgba(212,127,127,1);
-  }
-  
-  /* .brand-name {
-    text-decoration: none;
-    color: black;
-    font-size: 1.3rem;
-    margin-left: 1rem;
-  } */
-
- 
-
-  .brand-name {
-      width: 186px;
-      height: 67px;
-      border-radius: none;
-      margin-top: 15px;
-  }
-  
-  .navigation-menu {
-      display:flex;
-      
-  }
-  
-  .navigation-menu ul {
-    display: flex;
-    padding: 0;
-    
-  }
-  
-  .navigation-menu li {
-    list-style-type: none;
-    margin: 0 1rem;
-  }
-  
-  .navigation-menu li a {
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    
-  }
-  
-  .hamburger {
-    border: 0;
-    height: 40px;
-    width: 40px;
-    padding: 0.5rem;
-    border-radius: 50%;
-    background-color: #f5f5f5;
+.navbar-brand{  /*margen del logo version desktop*/
+    margin-left: 32px;
     cursor: pointer;
-    /* transition: background-color 0.2s ease-in-out; */
-    position: absolute;
-    top: 50%;
-    left: 25px;
-    transform: translateY(-50%);
-    display: none;
-   
   }
+  .nav-link{    /*color links de nav */
+    background-image: linear-gradient(#d47f7f,#d47f7f);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    transition: all .5s !important;
+    cursor: pointer;  
+  }
+  .nav-link:hover{  /*efecto link de nav cursor*/
+    font-weight: bold !important;
+    background-size: 60% 3px;
+  }
+  /* link activo seccion del nav  */
+  .active{
+    font-weight: bold !important;
+    background-size: 60% 3px;
+  }
+   /*ocultar redes sociales version desktop*/
+  .social-link{ 
+    align-items: center;
+    list-style: none;
+  }
+  .social-link li{
+    margin-left:20px;
+    display: none;
+  }
+  /* ocultar linea menu en desktop */
+  .menu-line{
+    display: none;
+  }
+  /* ocultar iconos de items del nav en desktop */
+  .nav-icons{
+    display: none;
+  }
+ 
+  /* resoluciones medianas y pequeñas */
   
-  /* .hamburger:hover {
-    background-color: #2642af;
-  } */
+  @media screen  and (max-width:991px){
+    /*ocultar efectos del nav en dispositovs pequeños*/
+    .nav-link{
+      background-size:0 !important;
+    }
+    .social-link{
+      margin-left:-50px;
+      margin-top: 40px;
+    }
+    /* link activo versiones mobiles */
+    .active{
+      background-size:0;
+    }
   
-  @media screen and (max-width: 550px) {
-    .navigation {
-        display: flex;
-        flex-direction: row-reverse;
-        z-index: 3;
+    .social-link li{  /*mostrar redes sociales menu dispositivos pequeños*/
+      display: inline-flex;
+      flex-direction: row;
+      vertical-align: middle;
     }
-    
-    .brand-name{
-        margin: auto;
-    }
-    .hamburger {
+    .menu-line{   /*mostrar linea menu*/
       display: block;
+      margin-top: 20px;
+      border: 2px solid #d47f7f;
     }
-  
-    .navigation-menu ul {
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      height: calc(100vh - 60px);
-      background-color: #f5f5f5;
-      /* border-top: 1px solid black; */
-      display: none;
+    .navbar-toggler{  /*boton menu */
+      position:absolute;
+      box-shadow: none !important;
+      border:transparent;
     }
-  
-    .navigation-menu li {
-      text-align: center;
-      margin: 0;
+    .navbar-brand{
+      margin-left:90px;
     }
-  
-    .navigation-menu li a {
-      color: rgba(212,127,127,1);
-      width: 100%;
-      padding: 1.5rem 0;
+    .nav-icons{  /*mostrar redes sociales dispositivos pequeños*/
+      display: inline-block;
+      vertical-align: 10%;
+      padding: 10px;
     }
-  
-    .navigation-menu li:hover {
-      background-color: #eee;
+    /* botón cerrar menu */
+    .close-menu{
+      position:absolute;
+      right:0;
+      margin-right: 20px;
     }
-  
-    .navigation-menu.expanded ul {
-      display: block;
+    .navbar-logo{  /*tamaño de logo en tablet*/
+      width:200px;
+    }
+  }
+
+  /* resoluciones pequeñas */
+  @media screen and (max-width:520px){
+    .navbar-logo{  /*tamaño de logo en mobil*/
+      width: 141px;  
+    }
+    .logo-offcanvas{  /*tamaño de logo en menu mobil*/
+      width:141px;
+    }
+    .menu-icon-nav{  /*tamaño de icono nav en mobiles pequeños*/
+      width:25px;
+    }
+    .navbar-toggler{
+      width:50px;
     }
   }
   

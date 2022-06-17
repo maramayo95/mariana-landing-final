@@ -1,0 +1,227 @@
+ .form-container{  /*contenedor formulario*/
+    margin-top:150px;
+    margin-bottom: 140px;
+    position: relative;
+}
+
+.form-design{  /*estilos formulario -fondo*/
+    filter:drop-shadow(0 8px 24px #7090B015);
+    background-color:#F9E8EB;
+    height: 529px;
+    margin-top: 50px;
+    border-radius: 40px;
+    padding:80px;
+    padding-top:40px;
+    margin: auto;
+ }
+ .title-form{  /*titulo de formulario*/
+    font-size: 64px;
+    font-family: 'Montserrat', sans-serif;
+    color:#E59C9C;
+    text-align: start;
+ }
+ .form-inputs{  /*márgenes inputs formulario*/
+   margin:auto;
+   margin-top:20px;
+ }
+ .form-inputs input{  /*estilos input formulario*/
+    max-width: 320px;
+    height: 48px;
+    margin-bottom: 31px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 8px 24px 0px #7090B026;
+    font-size: 0.875rem;
+    border-radius: 10px;
+ }
+ .textArea{  /*estilo textArea*/
+    width:100%;
+    height: 240px !important;
+    border: none;
+    box-shadow: 0px 8px 24px 0px #7090B026;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 20px;
+    font-weight: 500;
+    padding: 1rem;
+    resize: none;
+    outline: none;
+ }
+ textarea::placeholder{  /*color textArea placeholder*/
+    color: #D47F7F;    
+    font-family: 'Montserrat';
+    font-size: 0.875rem;
+    line-height: 20px;
+    font-weight: 500;
+}
+input::placeholder {  /*color input placeholder*/
+    color: #D47F7F;   
+}
+
+.btn-form {  /*estilos botón enviar*/
+    border: none;
+    width: 213px;
+    color: #FEF8F9;
+    background-color: #D47F7F;
+    border-radius: 6px;
+    box-shadow: 0px 8px 24px rgba(112, 144, 176, 0.15);
+    font-size: 14px;
+    font-weight: 700;
+    padding:1rem;
+}
+.btn-icon{  /*icono del boton*/
+    margin-bottom: 5px;
+}
+.btn-form:hover {
+    background-color:#d66e6e;
+}
+
+.error-message{  /*mensaje error*/
+    color:rgba(84,31,8,1);
+    text-align: left;
+    padding:0;
+}
+.btn-click-form{  /*mover el boton hacia arriba cuando hay mensajes de error en el formulario */
+    position:absolute; 
+    left:42%;
+    bottom:30px;
+}
+/* Resoluciones medianas - grandes */
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .form-container{  /*contenedor formulario*/
+        margin-top:70px;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    .form-design{  /*estilos formulario -fondo*/
+        height: auto;
+        margin: auto;
+        filter:none;
+        background: none;
+        padding:60px;
+    }
+    .form-inputs input{  /*estilos input formulario*/
+        max-width:100%;
+    }
+    .textArea{  /* textArea - ancho y posicion*/
+    max-width:100%;
+    }
+    .textA-div{ 
+        padding: 0;
+    }
+    .btn-form{  /*botón del formulario*/
+        margin-top:30px;
+        width:100%;
+        margin-bottom: -20px;
+    }
+    .btn-click-form{  /*mover el boton hacia arriba cuando hay mensajes de error en el formulario */
+        position:absolute;
+        left:10%;
+        width:80%;
+        bottom:10px;
+        margin-top: 20px;
+        margin-bottom: -10px;
+    }
+    .btn-icon{  /*icono del boton*/
+        margin-bottom: 3px;
+    }
+    .title-form{
+        margin-bottom: 70px;
+        text-align: center;
+    }
+}
+
+/* resoluciones medianas */
+
+@media screen and (min-width:520px) and (max-width:767px){
+    .form-container{  /*contenedor formulario*/
+        margin-top:50px;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    .form-design{  /*estilos formulario -fondo*/
+        height: auto;
+        margin: auto;
+        filter:none;
+        background: none;
+        padding: 30px;
+    }
+    .form-inputs input{  /*estilos input formulario*/
+        max-width:100%;
+    }
+    .textArea{  /* textArea - ancho y posicion*/
+    max-width:100%;
+    }
+    .textA-div{ 
+        padding: 0;
+    }
+    .btn-form{  /*botón del formulario*/
+        margin-top:30px;
+        width:100%;
+        margin-bottom: -20px;
+    }
+    .btn-click-form{  /*mover el boton hacia arriba cuando hay mensajes de error en el formulario */
+        position:absolute;
+        left:7.9%;
+        width:84.5%;
+        bottom:-10px;
+        margin-top: 20px;
+        /* margin-bottom: -10px; */
+    }
+    .btn-icon{  /*icono del boton*/
+        margin-bottom: 2px;
+    }
+    .title-form{  /*titulo de contacto*/
+        margin-bottom: 70px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:520px){
+    .form-container{  /*contenedor formulario*/
+        margin-top:30px;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    .form-design{  /*estilos formulario -fondo*/
+        height: auto;
+        margin: auto;
+        padding:15px;
+        filter:none;
+        background: none;
+    }
+    .form-inputs input{  /*estilos input formulario*/
+        max-width:100%;
+    }
+    .textArea{  /* textArea - ancho y posicion*/
+    max-width:100%;
+    }
+    .textA-div{ 
+        padding: 0;
+    }
+    .btn-form{  /*botón del formulario*/
+        margin-top:20px;
+        width:100%;
+        margin-bottom: 20px;
+    }
+    .btn-click-form{  /*mover el boton hacia arriba cuando hay mensajes de error en el formulario */
+        position:relative;
+        left:0;
+        top: -20px;
+        width:100%;
+        margin-bottom: -10px;
+    }
+    .title-form{  /*titulo de formulario*/
+        font-size: 50px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    .btn-icon{  /*icono del boton*/
+        margin-bottom: 0px;
+    }
+    .error-message{  /*mensaje error*/
+        margin-top: -10px;
+    }
+}

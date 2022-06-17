@@ -1,4 +1,12 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');  /*font Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');  /*font Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');  /*fuente montserrat extra bold*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');  /*fuente open sans semi bold*/
 
+
+body{  /*color de fondo - márgenes landing*/
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #FEf8f9;
+}

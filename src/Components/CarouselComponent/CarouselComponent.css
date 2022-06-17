@@ -1,0 +1,130 @@
+.carousel-container{   /*contenedor carousel*/
+    margin-top: 130px;
+}
+.carousel-image{   /*imagen carousel*/
+    width:90%;
+    object-fit:contain;
+    border-radius: 40px;
+}
+.carousel-control-next{  /*ocultar boton next*/
+    margin-right:-9vw;
+    visibility: hidden;
+}
+
+.carousel-control-prev{   /*ocultar boton prev*/
+    margin-left:-9vw;
+    visibility: hidden;
+}
+.carousel-control-prev-icon{   /*icono control prev*/
+    transform: scale(3);
+    background-image: url('../../../mock/assets/images/arrowLeft.svg')!important;
+}
+.carousel-control-next-icon{  /*icono control next*/
+    transform: scale(3);
+    background-image: url('../../../mock/assets/images/arrowRight.svg')!important;
+}
+.carousel:hover > .carousel-control-next{  /*mostrar boton next al hacer hover*/
+    visibility: visible;
+}
+.carousel:hover > .carousel-control-prev{  /*mostrar boton prev al hacer hover*/
+    visibility: visible;
+}
+
+.carousel-indicators{   /*indicadores item carousel posicion*/
+    bottom: -60px !important;
+}
+.carousel-title{  /*titulo carousel*/
+    font-family: 'Montserrat', sans-serif;
+    color:#E59C9C;
+    font-size: 64px;
+    max-width: 530px;
+    text-align: start;
+}
+.carousel-description{  /*descripcion carousel*/
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color:#541F08;
+    max-width: 420px;
+    text-align: justify;
+}
+
+/* resoluciones medianas-grandes */
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .carousel-container{  /*contenedor carousel*/
+        margin-bottom: -40px;
+        overflow: hidden;
+    }
+    .carousel-title{  /*titulo carousel*/
+        margin:auto;
+        margin-top:30px;
+        text-align: center;
+        font-size: 64px;
+        max-width: 520px;
+        height: 230px;
+    }
+    .carousel-description{  /*descripcion carousel*/
+        display: none;
+    }
+
+    .carousel:hover > .carousel-control-next{ /*ocultar boton next al hacer hover*/
+        visibility: hidden;
+    }
+    .carousel:hover > .carousel-control-prev{ /*ocultar boton prev al hacer hover*/
+        visibility: hidden;
+    }
+}
+
+/*resoluciones medianas*/
+
+@media screen and (min-width:520px) and (max-width:767px){
+    .carousel-container{   /*contenedor carousel*/
+        margin-bottom: -40px;
+        overflow: hidden;
+    }
+    .carousel-title{  /*titulo carousel*/
+        margin:auto;
+        margin-top:30px;
+        text-align: center;
+        font-size: 3.1rem;
+        max-width: 420px;
+        height:180px;
+    }
+    .carousel-description{  /*descripcion carousel*/
+        display: none;
+    }
+
+    .carousel:hover > .carousel-control-next{  /*ocultar boton next al hacer hover*/
+        visibility: hidden;
+    }
+    .carousel:hover > .carousel-control-prev{  /*ocultar boton prev al hacer hover*/
+        visibility: hidden;
+    }
+}
+/*resoluciones pequeñas*/
+
+@media screen and (max-width:520px){
+    .carousel-container{   /*contenedor carousel*/
+        margin-bottom: -90px;
+        overflow: hidden;
+    }
+    .carousel-title{  /*titulo carousel*/
+        margin:auto;
+        margin-top:30px;
+        text-align: center;
+        font-size: 2rem;
+        max-width: 300px;
+        height: 115px;
+    }
+    .carousel-description{  /*descripcion carousel*/
+        display: none;
+    }
+
+    .carousel:hover > .carousel-control-next{  /*ocultar boton next al hacer hover*/
+        visibility: hidden;
+    }
+    .carousel:hover > .carousel-control-prev{  /*ocultar boton prev al hacer hover*/
+        visibility: hidden;
+    }
+}

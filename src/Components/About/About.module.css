@@ -1,0 +1,115 @@
+
+.Section{  /*seccion about*/
+    margin-top:150px;
+}
+.image{  /*imagen about*/
+    object-fit: contain;
+    width:100%;
+}
+
+.title{   /*titulo about*/
+    max-width: 95%;
+    font-size: 64px;
+    color:#E59C9C;
+    font-family: 'Montserrat', sans-serif;
+    text-align: start;
+}
+.description{   /*descripcion de about*/
+    max-width: 90%;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+.containerSchoolJobs{   /*contenedor de estudios y trabajo*/
+    margin-top:20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: start;
+}
+.schoolJobs{   /*titulo de estudio y trabajo*/
+    margin-left: 10px;
+    font-size: 16px;
+    color:#541F08;
+    font-weight: bold;
+    vertical-align: middle;;
+}
+.schoolJobs2{
+    margin-left: 10px;
+    font-size: 16px;
+    color:#541F08;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.schoolJobsDescription{  /*descripcion de estudio y trabajo*/
+    font-size: 14px;
+    color:#541F08;
+    margin-left: 40px;
+    margin-top:-15px;
+    text-align: start;
+}
+
+/* resoluciones pequeñas */
+@media screen and (max-width:520px){
+    .title{   /*titulo about*/
+        font-size: 50px;
+        text-align: center;
+        max-width: 520px;
+    }
+    .description{  /*descripcion de about*/
+        width:90%;
+        margin: auto;
+        margin-left:10px;
+    
+    }
+    .containerSchoolJobs{  /*contenedor de estudios y trabajo*/
+        width:100%;
+        margin-top: 40px;
+        text-align: center;
+        margin-left: -20px;
+    }
+    .schoolJobs2{
+        margin-left: 0px;
+        font-size: 16px;
+        color:#541F08;
+        font-weight: bold;
+        vertical-align: middle;
+    }
+    .image{  /* ancho imagen sobre mi*/
+        width:96%;
+    }
+    .schoolJobsDescription{  /*descripcion de estudio y trabajo*/
+        text-align: center;
+        margin-left:0;
+    }
+}
+
+/* resoluciones medianas */
+@media screen and (min-width:520px) and (max-width:991px){
+    .title{   /*titulo about*/
+        font-size: 64px;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 30px;
+        max-width: 500px;
+    }
+    .description{  /*descripcion de about*/
+        width:90%;
+        margin: auto;
+    }
+    .containerSchoolJobs{  /*contenedor de estudios y trabajo*/
+        max-width:100%;
+        margin-top: 50px;
+        text-align: center;
+        margin-left: -20px;
+    }
+    .schoolJobs2{
+        margin-left: 0px;
+        font-size: 16px;
+        color:#541F08;
+        font-weight: bold;
+        vertical-align: middle;
+    }
+    .schoolJobsDescription{  /*descripcion de estudio y trabajo*/
+        text-align: center;
+        margin-left:0;
+    }
+}
