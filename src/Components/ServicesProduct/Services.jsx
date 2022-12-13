@@ -28,6 +28,7 @@ const Services = () => {
             <p className={styles.descriptionProducts}>
               Trabajo con diseño de Totebags de lienzo hace mas de 10 años.
               Puedo realizar diseños personalizados a medida del cliente.
+              
             </p>
           </Col>
           <Col lg={4} className={styles.productsFinal}>
@@ -36,6 +37,7 @@ const Services = () => {
             <p className={styles.descriptionProducts}>
               Trabajo con diseño de estuche con estampa hace mas de 10 años.
               Puedo realizar diseños personalizados a medida del cliente.
+
             </p>
           </Col>
         </Row>
