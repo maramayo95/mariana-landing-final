@@ -16,7 +16,12 @@ const About = () => {
             {/*descripcion sobre mi */}
             <h1 className={styles.title}>Mariana Battistella</h1>
             <p className={styles.description}>
-              Licenciada en la Universidad de Buenos Aires, dedique gran parte de mi vida al diseño gráfico
+              Soy Diseñadora grafica en constante formación, cuento
+              con más de 10 años de experiencia trabajando en diferentes
+              proyectos y áreas de diseño. Desde hace unos años estoy enfocada
+              en ampliar mis herramientas y conocimientos en diseño, asistiendo a
+              workshops, meetups y acercándome a comunidades con la idea de
+              seguir aprendiendo de los que más saben.
             </p>
             <p className={styles.containerSchoolJobs}>
               {/*estudios - trabajo */}
