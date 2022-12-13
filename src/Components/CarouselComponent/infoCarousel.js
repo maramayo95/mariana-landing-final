@@ -8,7 +8,7 @@ export const dataCarousel = [
     image: image1,
     title: "Totebags de lienzo con estampa",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget posuere magna, id cursus urna. Quisque eu auctor diam, et pretium magna.",
+      "Encontra los mejores Totebasgs de Lienzo con estampa.",
     alt: "imagen Totebags estampa",
   },
   {
@@ -16,7 +16,7 @@ export const dataCarousel = [
     image: image2,
     title: "Caja estuche con estampa",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget posuere magna, id cursus urna. Quisque eu auctor diam, et pretium magna.",
+      "Diseños de caja a medida",
     alt: "imagen estche estampa",
   },
   {
@@ -24,7 +24,7 @@ export const dataCarousel = [
     image: image3,
     title: "Bolsas de papel kraft con flexografía",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget posuere magna, id cursus urna. Quisque eu auctor diam, et pretium magna.",
+      "Bolsas personalizadas a medida",
     alt: "imagen bolsas kraft",
   },
 ];

@@ -16,16 +16,7 @@ const About = () => {
             {/*descripcion sobre mi */}
             <h1 className={styles.title}>Mariana Battistella</h1>
             <p className={styles.description}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-              blanditiis a voluptates, excepturi quam at temporibus corrupti
-              omnis laboriosam! Repellendus consectetur possimus ullam nulla
-              rerum molestias ex? Nobis, impedit qui. Cumque, itaque totam!
-              Commodi et quo voluptate iste at error iure eum sit recusandae!
-              Ipsam perspiciatis temporibus quia perferendis reprehenderit
-              aliquid velit aspernatur voluptate et, impedit a at molestias
-              dolor. Et sed harum fuga eum saepe, blanditiis adipisci ipsum
-              nesciunt doloremque. Magni tempora illo eos ducimus adipisci esse
-              unde nulla architecto?
+              Licenciada en la Universidad de Buenos Aires, dedique gran parte de mi vida al diseño gráfico
             </p>
             <p className={styles.containerSchoolJobs}>
               {/*estudios - trabajo */}
